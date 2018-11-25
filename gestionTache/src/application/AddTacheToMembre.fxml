@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="1166.0" styleClass="transparentPane" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddTacheToMembre">
+   <children>
+      <AnchorPane layoutX="824.0" layoutY="39.0" prefHeight="86.0" prefWidth="318.0" styleClass="PanetableauGent">
+         <children>
+            <JFXComboBox fx:id="cmbNomTache" focusColor="#046380" layoutX="35.0" layoutY="27.0" prefHeight="30.0" prefWidth="254.0" promptText="Nom du tache" styleClass="combo" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="360.0" layoutY="141.0" prefHeight="539.0" prefWidth="782.0" styleClass="PanetableauGent">
+         <children>
+            <TableView fx:id="lstTache" layoutX="6.0" layoutY="13.0" onMousePressed="#tbListTachePesed" prefHeight="490.0" prefWidth="763.0">
+              <columns>
+                  <TableColumn fx:id="idTache" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="nomTache" prefWidth="130.0" text="Nom" />
+                <TableColumn fx:id="descriptionTache" prefWidth="151.0" text="Description" />
+                  <TableColumn fx:id="dateDebutTache" prefWidth="143.0" text="Date debut" />
+                  <TableColumn fx:id="dateFinTache" prefWidth="160.0" text="Date fin" />
+                  <TableColumn fx:id="etatTache" prefWidth="156.0" text="Etat " />
+              </columns>
+            </TableView>
+            <Label layoutX="6.0" layoutY="508.0" text="Selectionner pour avoir plus d'information sur la tache" textFill="#ff5b2b">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="16.0" layoutY="106.0" prefHeight="480.0" prefWidth="318.0" styleClass="PanetableauGent">
+         <children>
+            <JFXTextField fx:id="txtNomTache" focusColor="#046380" layoutX="33.0" layoutY="149.0" prefHeight="28.0" prefWidth="247.0" promptText="Nom tache">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <AnchorPane cache="true" layoutY="-32.0" prefHeight="69.0" prefWidth="139.0" styleClass="transparentPane">
+               <children>
+                  <AnchorPane layoutX="26.0" layoutY="-37.0" prefHeight="92.0" prefWidth="103.0" styleClass="PaneDashboard_3">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR" layoutX="34.0" layoutY="58.0" size="45.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <JFXTextArea fx:id="txtDescriptionTache" layoutX="33.0" layoutY="193.0" prefHeight="103.0" prefWidth="247.0" promptText="Description de la tache">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextArea>
+            <JFXDatePicker fx:id="txtDateDebutTache" defaultColor="#046380" layoutX="33.0" layoutY="323.0" prefHeight="28.0" prefWidth="247.0" promptText="Date debut" styleClass="combo" />
+            <JFXDatePicker fx:id="txtDateFinTache" defaultColor="#046380" layoutX="33.0" layoutY="373.0" prefHeight="28.0" prefWidth="247.0" promptText="Date fin" styleClass="combo" />
+            <JFXComboBox fx:id="txtEtatTache" focusColor="#046380" layoutX="33.0" layoutY="424.0" prefHeight="30.0" prefWidth="247.0" promptText="Etat de la tache" styleClass="combo" />
+            <JFXTextField fx:id="txtIdTache" focusColor="#046380" layoutX="36.0" layoutY="42.0" prefHeight="28.0" prefWidth="247.0" promptText="ID membre">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtIdMembre" focusColor="#046380" layoutX="36.0" layoutY="95.0" prefHeight="28.0" prefWidth="247.0" promptText="ID membre">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="16.0" layoutY="603.0" prefHeight="79.0" prefWidth="318.0" styleClass="PanetableauGent">
+         <children>
+            <JFXButton fx:id="btnEnregistrerTache" buttonType="RAISED" layoutX="9.0" layoutY="21.0" prefHeight="38.0" prefWidth="128.0" styleClass="topPane" text="Assigner tache" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#fffdfd" glyphName="SAVE" size="15.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnEnregistrerTache1" buttonType="RAISED" layoutX="179.0" layoutY="21.0" prefHeight="38.0" prefWidth="128.0" styleClass="topPane" text="Ajouter tache" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#fffdfd" glyphName="REMOVE" size="15.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

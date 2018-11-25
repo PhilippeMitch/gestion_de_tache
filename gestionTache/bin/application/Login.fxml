@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+
+<AnchorPane fx:id="pane_area" prefHeight="450.0" prefWidth="700.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <AnchorPane prefHeight="138.0" prefWidth="700.0" styleClass="topPane" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="256.0" layoutY="17.0" text="GT -" textFill="#fffefe">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="325.0" layoutY="17.0" text="Application" textFill="#ff5b2b">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" layoutX="681.0" layoutY="17.0" onMouseClicked="#closeButton" size="16.0" AnchorPane.bottomAnchor="118.4017858505249" AnchorPane.leftAnchor="681.0" AnchorPane.rightAnchor="6.428571701049805" AnchorPane.topAnchor="3.2857141494750977" />
+         
+         </children></AnchorPane>
+      <AnchorPane layoutX="132.0" layoutY="69.0" prefHeight="318.0" prefWidth="436.0" styleClass="cardPane" stylesheets="@application.css">
+         <children>
+            <JFXTextField fx:id="txtNomUser" focusColor="#056380" layoutX="112.0" layoutY="136.0" prefHeight="30.0" prefWidth="237.0" promptText="Nom Utilisateur" unFocusColor="#9a9a9a">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassUser" focusColor="#056380" layoutX="112.0" layoutY="183.0" prefHeight="30.0" prefWidth="237.0" promptText="Mot de passe" unFocusColor="#9a9a9a">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnConnect" buttonType="RAISED" layoutX="180.0" layoutY="240.0" onAction="#Login" prefHeight="32.0" prefWidth="116.0" styleClass="topPane" stylesheets="@application.css" text="Connecter" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="126.0" layoutY="52.0" styleClass="welcome-text" stylesheets="@application.css" text="Bienvenue" textFill="#807878" />
+            <FontAwesomeIconView fill="#056380" glyphName="USER" layoutX="78.0" layoutY="167.0" size="35.0" />
+            <FontAwesomeIconView fill="#046380" glyphName="LOCK" layoutX="79.0" layoutY="216.0" size="35.0" />
+         </children></AnchorPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

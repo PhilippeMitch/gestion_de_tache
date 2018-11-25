@@ -1,0 +1,172 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root{
+	-fx-background-color: #dddddd;
+}
+
+.cardPane{
+	-fx-background-color: white;
+	-fx-background-radius: 8px;	
+	-fx-effect: dropshadow(three-pass-box, gray, 10, 0, 0, 0);
+}
+
+.formShadow{
+	-fx-background-radius: 18px;	
+	-fx-effect: dropshadow(three-pass-box, white, 10, 0, 0, 0);
+}
+
+.menu_list{
+	-fx-background-color: white;
+	-fx-effect: dropshadow(three-pass-box, gray, 10, 0, 0, 0);
+}
+
+.bar_bottom{
+	-fx-background-color: white;
+	-fx-effect: dropshadow(three-pass-box, gray, 5, 0, 5, 0);
+}
+
+.combo{
+	-fx-font-size: 14px;
+}
+.comboSearch{
+	-fx-font-size: 14px;
+	-fx-text-fill: white;
+}
+
+.paneWhite{
+	
+	-fx-background-color: white;
+	-fx-border-color: aeabab;
+	-fx-border-width: 1px;
+}
+
+.topPane{
+	-fx-background-color:#046380; 
+}
+
+.buttonModifier{
+	-fx-background-color:#8FA3AD; 
+}
+
+.clearButton{
+	-fx-background-color:#2e8cae;	
+}
+
+.paneBorderTop{
+	-fx-background-color: #046380;
+	-fx-border-color: gray;
+	-fx-border-radius: 6px;
+	-fx-border-width: 1px;
+	-fx-background-radius: 6px;
+}
+
+.buttonCircle{
+	-fx-background-radius: 30px;
+	-fx-background-color: #ff5b2b;
+	-fx-effect: dropshadow(gaussian, gray, 10, 0, 1, 1);
+}
+
+.PaneDashboard_1{
+	-fx-background-color:#046380;
+	-fx-background-radius: 6px; 
+}
+
+.PaneDashboard_2{
+	-fx-background-color:#FFBD4F;
+	-fx-background-radius: 6px; 
+}
+
+.PaneDashboard_3{
+	-fx-background-color:#2e8cae;
+	-fx-background-radius: 6px; 
+}
+
+.PaneDashboard_noradiux{
+	-fx-background-color:#2e8cae;
+}
+
+.PaneDashboard_4{
+	-fx-background-color:#8FA3AD;
+	-fx-background-radius: 6px; 
+}
+.Panetableau{
+	-fx-background-color:white;
+}
+.PanetableauGent{
+	-fx-background-color:white;	
+	-fx-background-radius: 8px;
+	-fx-effect: dropshadow(gaussian, gray, 10, 0, 1, 1);
+}
+
+#label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+.welcome-text {
+   -fx-font-size: 32px;
+   -fx-font-family: "Arial Black";
+   -fx-fill: #818181;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 2, 0.0 , 0 , 2 );
+}
+
+.bottom-text {
+   -fx-font-size: 16px;
+   -fx-font-family: "Arial Black";
+   -fx-fill: #818181;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 2, 0.0 , 0 , 2 );
+}
+
+#actiontarget {
+  -fx-fill: FIREBRICK;
+  -fx-font-weight: bold;
+  -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );  
+}
+#button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow(three-pass-box, purple, 10, 0, 0, 0);
+}
+.buttonMinus:hover {
+    -fx-background-color: linear-gradient(#ff1111, #890b0b);
+}
+
+.buttonClear{
+	-fx-background-color: #ff5b2b;
+}
+
+.rootAddGent {
+   
+  -fx-border-insets: 23;
+
+  -fx-background-insets: 23;
+
+  -fx-border-color: gray;
+
+  -fx-border-style: solid;
+
+  -fx-border-width: 1;
+
+  -fx-effect: dropshadow(three-pass-box, rgba(100, 100, 100, 1), 24, 0.5, 0, 0);
+}
+
+.transparentPane{
+  -fx-effect: dropshadow(three-pass-box, derive(cadetblue, -20%), 10, 0, 4, 4); 
+  -fx-background-color: derive(cadetblue, -20%); 
+  -fx-fill: radial-gradient(focus-angle 45deg, focus-distance 20%, center 25% 25%, radius 50%, reflect, #eeeeee88, #55555588 75%, dimgray);
+  -fx-arc-width:25;
+  -fx-arc-height:25;
+  -fx-background-color: transparent ;
+}
+
+
+.paneBorder{
+	 -fx-border-color: #ccc7c7;
+	 -fx-border-style: solid;
+	 -fx-border-width: 0.5;
+	 -fx-background-color: white;
+	 
+}

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="1224.0" styleClass="transparentPane" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ListMembreController">
+   <children>
+      <AnchorPane layoutX="767.0" layoutY="82.0" prefHeight="86.0" prefWidth="443.0" styleClass="PanetableauGent">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="-39.0" prefHeight="100.0" prefWidth="120.0" styleClass="PaneDashboard_3">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="40.0" layoutY="70.0" size="50.0" text="" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" layoutX="71.0" layoutY="88.0" size="30.0" />
+               </children>
+            </AnchorPane>
+            <JFXTextField fx:id="txtSearcheMembre" focusColor="#046380" layoutX="169.0" layoutY="27.0" prefHeight="30.0" prefWidth="257.0" promptText="ID membre">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXTextField>
+            <FontAwesomeIconView fill="#4d4d4d" glyphName="FILTER" layoutX="143.0" layoutY="53.0" size="18.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="426.0" layoutY="183.0" prefHeight="492.0" prefWidth="784.0" styleClass="PanetableauGent">
+         <children>
+            <TableView fx:id="lstMembre" layoutX="2.0" layoutY="14.0" onMousePressed="#tbListMembrePresed" prefHeight="440.0" prefWidth="758.0">
+              <columns>
+                  <TableColumn fx:id="idMembre" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="nomMembre" prefWidth="130.0" text="Nom" />
+                <TableColumn fx:id="prenomMembre" prefWidth="151.0" text="Prenom" />
+                  <TableColumn fx:id="telMembre" prefWidth="143.0" text="Telephone" />
+                  <TableColumn fx:id="adresseMembre" prefWidth="160.0" text="Adresse" />
+                  <TableColumn fx:id="mailMembre" prefWidth="156.0" text="Email" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="btnAddTacheMembre" buttonType="RAISED" layoutX="727.0" layoutY="429.0" onAction="#addTacheMembre" prefHeight="51.0" prefWidth="50.0" styleClass="buttonCircle" text=" " textFill="WHITE" AnchorPane.bottomAnchor="12.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR" size="15.0" wrappingWidth="11.785714149475098" />
+               </graphic>
+            </JFXButton>
+            <Label layoutX="2.0" layoutY="464.0" text="Selectionner la ligne que vous voulez modiifier" textFill="#ff5b2b">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="13.0" layoutY="106.0" prefHeight="430.0" prefWidth="402.0" styleClass="PanetableauGent">
+         <children>
+            <JFXTextField fx:id="txtNom" focusColor="#046380" layoutX="82.0" layoutY="107.0" prefHeight="28.0" prefWidth="247.0" promptText="Nom">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtPrenom" focusColor="#046380" layoutX="78.0" layoutY="170.0" prefHeight="28.0" prefWidth="247.0" promptText="Prenom">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtPhone" focusColor="#046380" layoutX="78.0" layoutY="232.0" prefHeight="30.0" prefWidth="247.0" promptText="Telephone">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtMail" focusColor="#046380" layoutX="78.0" layoutY="294.0" prefHeight="28.0" prefWidth="247.0" promptText="E-mail">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtadresseMembre" focusColor="#046380" layoutX="78.0" layoutY="353.0" prefHeight="28.0" prefWidth="247.0" promptText="Adresse">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <AnchorPane cache="true" layoutY="-32.0" prefHeight="69.0" prefWidth="139.0" styleClass="transparentPane">
+               <children>
+                  <AnchorPane layoutX="26.0" layoutY="-37.0" prefHeight="92.0" prefWidth="103.0" styleClass="PaneDashboard_3">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="34.0" layoutY="58.0" size="45.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <JFXTextField fx:id="txtIdMembre" focusColor="#046380" layoutX="82.0" layoutY="48.0" prefHeight="28.0" prefWidth="247.0" promptText="ID membre">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="11.0" layoutY="548.0" prefHeight="100.0" prefWidth="402.0" styleClass="PanetableauGent">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="7.0" layoutY="31.0" onAction="#addMembre" prefHeight="38.0" prefWidth="111.0" styleClass="topPane" text="Enregistrer" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#fffdfd" glyphName="SAVE" size="15.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnClearMembre" buttonType="RAISED" layoutX="277.0" layoutY="31.0" onAction="#clearForm" prefHeight="38.0" prefWidth="111.0" styleClass="buttonModifier" text="Nettoyer" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="15.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnClearMembre1" buttonType="RAISED" layoutX="146.0" layoutY="31.0" onAction="#clearForm" prefHeight="38.0" prefWidth="111.0" styleClass="buttonModifier" text="Supprimer" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="15.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

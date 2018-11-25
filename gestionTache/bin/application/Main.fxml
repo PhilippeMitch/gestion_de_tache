@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="925.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="50.0" prefWidth="879.0" snapToPixel="false" styleClass="topPane" stylesheets="@application.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="649.0" layoutY="10.0" text="GT -" textFill="#fffefe">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="698.0" layoutY="10.0" text="Application" textFill="#ff5b2b">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="884.0" layoutY="1.0" prefHeight="25.0" prefWidth="35.0" styleClass="buttonMinus" text=" " AnchorPane.rightAnchor="4.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="MINUS" scaleX="1.3" size="15.0" text="" />
+               </graphic>
+               <padding>
+                  <Insets left="10.0" top="2.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton layoutX="758.0" layoutY="8.0" onAction="#btnDisconnectAction" prefHeight="35.0" prefWidth="128.0" text="Deconnexion" textFill="WHITE" AnchorPane.rightAnchor="39.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" size="14.0" />
+               </graphic>
+            </JFXButton>
+         </children></AnchorPane>
+      <AnchorPane layoutX="-6.0" layoutY="49.0" prefHeight="483.0" prefWidth="155.0" styleClass="menu_list" stylesheets="@application.css" AnchorPane.bottomAnchor="1.0" AnchorPane.topAnchor="49.0">
+         <children>
+            <Label fx:id="nomUser" layoutX="47.0" layoutY="25.0" styleClass="bottom-text" text="\$">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnListMembre" layoutX="4.0" layoutY="107.0" onAction="#btnListMembre" prefHeight="30.0" prefWidth="151.0" text="Membres" textFill="#818181">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#046380" glyphName="GROUP" size="14.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnListTache" layoutX="-1.0" layoutY="145.0" onAction="#btnListTache" prefHeight="30.0" prefWidth="156.0" text="  Taches" textFill="#818181">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#046380" glyphName="CALENDAR" size="14.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAddMembre" layoutX="11.0" layoutY="70.0" onAction="#btnDashboardAction" prefHeight="30.0" prefWidth="145.0" text="Dashboard" textFill="#818181">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#046380" glyphName="DASHBOARD" size="14.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="149.0" layoutY="461.0" prefHeight="40.0" prefWidth="779.0" styleClass="bar_bottom" stylesheets="@application.css" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="-3.0">
+         <children>
+            <Label layoutX="491.0" layoutY="8.0" styleClass="bottom-text" text="Mitch" />
+            <Label layoutX="545.0" layoutY="7.0" text="Technologie" textFill="#ff5b2b">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="347.0" layoutY="8.0" text="Developed by S&amp;M">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Line endX="100.0" layoutX="75.0" layoutY="190.0" scaleX="0.72" scaleY="0.1" scaleZ="0.15" startX="-100.0">
+         <rotationAxis>
+            <Point3D z="0.5" />
+         </rotationAxis>
+      </Line>
+      <AnchorPane fx:id="pane" layoutX="210.0" layoutY="59.0" />
+      <Line endX="100.0" layoutX="70.0" layoutY="227.0" scaleX="0.75" scaleY="0.1" scaleZ="0.15" startX="-100.0" />
+      <Line endX="100.0" layoutX="74.0" layoutY="153.0" scaleX="0.75" scaleY="0.1" scaleZ="0.15" startX="-100.0" />
+      <Line endX="100.0" layoutX="74.0" layoutY="115.0" scaleX="0.72" scaleY="0.1" scaleZ="0.15" startX="-100.0" />
+   </children>
+</AnchorPane>
